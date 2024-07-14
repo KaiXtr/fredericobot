@@ -4,7 +4,6 @@ import os
 
 import intents
 import geral
-import falas
 import lembrar
 import tabela
 import audio
@@ -50,19 +49,19 @@ async def ajuda(ctx,*args): await geral.ajuda(ctx,*args)
 #############################################
 
 @bot.command(name='frederico', aliases=['fred'], help='Responde á um chamado')
-async def frederico(ctx): await falas.frederico(ctx)
+async def frederico(ctx): await geral.frederico(ctx)
 
 @bot.command(name='salve', help='Manda um salve')
-async def salve(ctx): await falas.salve(ctx)
+async def salve(ctx): await geral.salve(ctx)
 
 @bot.command(name='abraço', aliases=['abraco'], help='Manda um abraço')
-async def abraco(ctx): await falas.abraco(ctx)
+async def abraco(ctx): await geral.abraco(ctx)
 
 @bot.command(name='gay', help='gay')
-async def gay(ctx): await falas.gay(ctx)
+async def gay(ctx): await geral.gay(ctx)
 
 @bot.command(name='limpaf', help='Apaga todas as mensagens enviadas pelo Frederico')
-async def limpaf(ctx): await falas.limpaf(ctx)
+async def limpaf(ctx): await geral.limpaf(ctx)
 
 #############################################
 

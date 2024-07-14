@@ -15,6 +15,24 @@ async def falef(ctx,*args):
 		resposta:str = random.choice(falas)
 	
 	await ctx.send(resposta,tts=True)
+
+async def frederico(ctx):
+    await ctx.send("Me chamaram?")
+
+async def salve(ctx):
+    await ctx.send("Salve salve")
+
+async def abraco(ctx):
+    await ctx.send("Um forte abraço, galera!")
+
+async def gay(ctx):
+    await ctx.send("Quem aqui é gay? 🏳️‍🌈")
+
+async def limpaf(ctx):
+    await ctx.message.delete()
+    for i in await ctx.channel.history(limit=200).flatten():
+        if i.author.name == '𝕱𝖗𝖊𝖉𝖊𝖗𝖎𝖈𝖔':
+            await i.delete()
 	
 async def calc(ctx,*args):
 	if args:
