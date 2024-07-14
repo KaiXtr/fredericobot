@@ -1,2 +1,7 @@
+*__pycache__
 downloads/*
+*.venv
+*.frederico
 *.db
+.env
+data.db
